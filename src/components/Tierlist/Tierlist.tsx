@@ -185,7 +185,7 @@ export const Tierlist: React.FC<TierlistProps> = props => {
         const dataUrl = await toPng(screenshotAreaRef.current)
 
         const link = document.createElement('a')
-        link.download = title || 'my-image-name.png'
+        link.download = title || 'tier-list-name.png'
         link.href = dataUrl
         link.click()
 
@@ -197,7 +197,7 @@ export const Tierlist: React.FC<TierlistProps> = props => {
                 className="rakkas"
                 onClick={() => setTitleInputOpen(prev => !prev)}
             >
-                {title ? title : "Your TierList Name"}
+                {title ? title : "Your Tier List Name"}
             </h2>
 
             {/* <label htmlFor="">
@@ -207,7 +207,7 @@ export const Tierlist: React.FC<TierlistProps> = props => {
                 required
                 type="text"
                 minLength={3}
-                placeholder={"Your TierList Name"}
+                placeholder={"Your Tier List Name"}
                 value={title}
                 onChange={e => setTitle(e.target.value)}
             />}
