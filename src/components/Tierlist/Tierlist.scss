@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+
+$row-background: #333;
+
+.tierlist {
+    .header {
+        margin-left: 5%;
+        margin-bottom: 1rem;
+
+        h2 {
+            margin: 0;
+            margin-left: 1rem;
+            margin-top: 1rem;
+            color: white;
+            font-family: "Rakkas", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        input {
+            margin-left: 1rem;
+
+            // &:not(:placeholder-shown):valid {
+            //     outline: 2px solid rgb(0, 255, 0);
+            // }
+
+            // &:not(:placeholder-shown):invalid {
+            //     outline: 2px solid red;
+            // }
+
+            // &:focus:invalid {
+            //     outline: 2px solid orange;
+            // }
+        }
+    }
+
+    h2 {
+        margin-left: 1rem;
+        color: white;
+        font-family: "Rakkas", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .group-list-container {
+        display: flex;
+        flex-direction: column;
+
+        :last-child.dnd-group {
+            border-bottom: 2px solid black;
+        }
+    }
+
+    .input-container {
+        color: white;
+        outline: 1px solid white;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+
+        input {
+            padding: 1rem;
+        }
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            width: 100%;
+            max-width: 20rem;
+            background: #3a5795;
+            color: #fff;
+            border-radius: 6px;
+            font-size: 1rem;
+            padding: 0.5rem;
+            margin: 1rem;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Fruktur:ital@0;1&family=Protest+Guerrilla&display=swap');
+
+a {
+    text-decoration: none;
+}
+
+.nav-bar {
+    background-color: #000;
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+
+    .header-wrapper {
+        max-width: 70rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .fruktur {
+        font-family: "Fruktur", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    img {
+        width: 4rem;
+    }
+
+}
+
+.outlet-wrapper {
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,5 @@
+Fix drag preview images(size)
+Drag over icon, currently shows forbidden
+Figure out saving?
+Add name to list and update download ss name
+mobile responsive?

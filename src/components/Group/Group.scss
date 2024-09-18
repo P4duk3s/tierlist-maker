@@ -1,0 +1,112 @@
+$row-background: #333;
+$label: rgb(255, 127, 127);
+$BC1: hsl(60, 70%, 50%);
+
+@mixin label($idx: 0) {
+    width: 6.25rem;
+    background-color: hsl(0deg + $idx * 30, 60%, 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.25rem;
+
+    span {
+        overflow-wrap: anywhere;
+    }
+}
+
+.dnd-group {
+    background-color: $row-background;
+    min-height: 5.5rem;
+    display: flex;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+
+    .group-label-0 {
+        @include label(0)
+    }
+
+    .group-label-1 {
+        @include label(1)
+    }
+
+    .group-label-2 {
+        @include label(2)
+    }
+
+    .group-label-3 {
+        @include label(3)
+    }
+
+    .group-label-4 {
+        @include label(4)
+    }
+
+    .group-label-5 {
+        @include label(5)
+    }
+
+    .group-label-6 {
+        @include label(6)
+    }
+
+    .group-label-7 {
+        @include label(7)
+    }
+
+    .group-label-8 {
+        @include label(8)
+    }
+
+    .group-label-9 {
+        @include label(9)
+    }
+
+    .group-label-10 {
+        @include label(10)
+    }
+
+    .group-label-11 {
+        @include label(11)
+    }
+
+    .icon-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex: 1;
+        // padding: 0.25rem;
+
+        .dnd-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+
+    .config {
+        width: 5rem;
+        background-color: #000;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .pointer-cursor {
+            cursor: pointer;
+        }
+
+        .vertical {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+.dnd-item-current {
+    opacity: 0.3;
+}

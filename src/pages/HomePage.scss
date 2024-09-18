@@ -1,0 +1,53 @@
+.wrapper {
+    max-width: 1140px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+    .button-container {
+        flex: 1;
+        display: flex;
+
+        .column {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .center-self {
+            align-self: center;
+        }
+
+        button {
+            max-width: 20rem;
+            background: #3a5795;
+            color: #fff;
+            border-radius: 6px;
+            font-size: 1rem;
+            padding: 0.5rem;
+            margin: 1rem;
+            cursor: pointer;
+        }
+    }
+
+    .user-tierlist-container {
+        flex: 1;
+        outline: 1px solid red;
+        padding: 0.25rem;
+        margin-right: 1.5rem;
+
+        h1 {
+            color: white;
+            margin: 0;
+            font-size: 1.5rem;
+        }
+    }
+
+
+}
