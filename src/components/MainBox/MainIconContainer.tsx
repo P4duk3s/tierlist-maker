@@ -12,6 +12,7 @@ export const MainIconContainer: React.FC<DefaultIconContainer> = props => {
         <div
             className="main-container"
             onDragEnter={() => onDragEnter("main")}
+            onDragOver={e => e.preventDefault()}
         >
             {renderIcons("main")}
         </div>

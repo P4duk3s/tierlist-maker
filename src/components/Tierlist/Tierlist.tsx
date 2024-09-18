@@ -87,6 +87,7 @@ export const Tierlist: React.FC<TierlistProps> = props => {
                     draggable
                     onDragStart={e => handleDragStart(e, icon)}
                     onDragEnter={() => handleDragEnterIcon(icon)}
+                    onDragOver={e => e.preventDefault()}
                 >
                     <Icon src={icon.imgSrc} />
                 </div>

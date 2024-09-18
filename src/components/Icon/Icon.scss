@@ -2,4 +2,9 @@
     width: 5rem;
     height: 5rem;
     object-fit: cover;
+    cursor: grab;
+
+    &:active {
+        cursor: grabbing;
+    }
 }

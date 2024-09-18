@@ -29,7 +29,11 @@ export const Group: React.FC<GroupProps> = props => {
             </span>
         </div>
         <div className="icon-container"
-            onDragEnter={() => onDragEnter(group.id)}
+            onDragEnter={(e) => {
+                onDragEnter(group.id)
+                e.dataTransfer.effectAllowed = "move"
+            }}
+            onDragOver={e => e.preventDefault()}
         >
             {renderIcons(group.id)}
         </div>
