@@ -1,8 +1,8 @@
 import "./Dialog.scss"
 import { v4 } from "uuid";
-import { IconData } from "../../App";
 import { useEffect, useRef, useState } from "react"
 import { GroupData } from "../Tierlist/Tierlist";
+import { IconData } from "../../lib/Tierlist-Data";
 
 
 export const Dialog = (

@@ -1,6 +1,6 @@
 import "./Icon.scss"
 
-type IconProps = {
+export type IconProps = {
     src: string
 }
 
