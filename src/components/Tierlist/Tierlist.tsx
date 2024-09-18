@@ -1,6 +1,6 @@
 import "./Tierlist.scss"
-import { useCallback, useEffect, useMemo, useRef, useState } from "react"
-import { IconData } from "../../App"
+import { useCallback, useMemo, useRef, useState } from "react"
+import { IconData } from "../../lib/Tierlist-Data"
 import { Group } from "../Group/Group"
 import { Icon } from "../Icon/Icon"
 import { MainIconContainer } from "../MainBox/MainIconContainer"

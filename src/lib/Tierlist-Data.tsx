@@ -1,6 +1,6 @@
 import { v4 } from "uuid"
 
-type IconData = {
+export type IconData = {
     id: string,
     imgSrc: string,
     group: "main" | (string & {})
